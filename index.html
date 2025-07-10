@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CTRL₹ Floating Loader</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="dark.css" />
+</head>
+<body>
+  <div class="navigation">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li>
+        <button class="nav-services-btn" id="nav-services-btn">Services</button>
+      </li>
+      <li><a href="blog.html">Blog</a></li>
+      <li>
+        <button class="nav-contact-btn" id="nav-contact-btn">Contact</button>
+      </li>
+      <li>
+        <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+      </li>
+    </ul>
+  </div>
+  <div class="nav-overlay" onclick="document.querySelector('.navigation').classList.remove('open')"></div>
+  <div class="banner">
+    <div class="banner-content">
+      <div class="banner-row">
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+        <img src="logo2.png" alt="CTRL₹ Logo" class="banner-logo" />
+        <div class="banner-text-col">
+          <span class="banner-app-name">CTRL₹</span>
+          <div class="banner-tagline">Take CTRL of your Paisa !!!</div>
+        </div>
+      </div>
+      <a href="CTRL₹.apk" target="_blank" class="download-btn">Download Now</a>
+    </div>
+  </div>
+  <div class="main-content wide-layout">
+    <div class="calc-feedback-row">
+      <div class="budget-calc">
+        <div class="budget-heading">
+          <span>🚀 See How CTRL₹ Empowers Your Paisa!</span>
+        </div>
+        <form id="budget-form" autocomplete="off">
+          <label for="budget-amount">Enter your budget:</label>
+          <div class="budget-row">
+            <input type="number" id="budget-amount" min="1" required placeholder="₹ Amount" />
+            <select id="budget-type">
+              <option value="daily">Daily</option>
+              <option value="weekly">Weekly</option>
+              <option value="monthly">Monthly</option>
+            </select>
+            <select id="user-type">
+              <option value="student">Student</option>
+              <option value="professional">Professional</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <button type="submit" class="calc-btn">Calculate</button>
+        </form>
+        <div id="result-section" style="display:none;">
+          <h3>Your Calculated Budget 💰</h3>
+          <p id="daily-budget"></p>
+          <p id="weekly-budget"></p>
+          <p id="monthly-budget"></p>
+          <div id="fun-lines" style="margin-top: 1em;"></div>
+        </div>
+      </div>
+      <div class="feedback-form-card">
+        <h3>Feedback</h3>
+        <form id="feedbackForm" action="https://formsubmit.co/your.ctrlcommunity@gmail.com" method="POST" enctype="multipart/form-data">
+          <label for="feedback-name">Name (optional):</label>
+          <input type="text" id="feedback-name" name="name" placeholder="Your name (optional)" />
+
+          <label for="feedback-email">Email (optional):</label>
+          <input type="email" id="feedback-email" name="email" placeholder="Your email (optional)" />
+
+          <label for="feedback-review">Your Review:</label>
+          <textarea id="feedback-review" name="message" rows="6" required placeholder="Type your review or feedback..."></textarea>
+
+          <label for="feedback-screenshot">Screenshot (optional, for bugs):</label>
+          <input type="file" id="feedback-screenshot" name="attachment" accept="image/*" />
+
+          <button type="submit" class="feedback-btn">Send Feedback</button>
+        </form>
+      </div>
+    </div>
+    <div class="features-section wide-features">
+      <div class="features-tabs" role="tablist">
+        <button class="features-tab active" role="tab" aria-selected="true" aria-controls="features-list" id="tab-features">Features</button>
+        <button class="features-tab" role="tab" aria-selected="false" aria-controls="coming-soon-list" id="tab-coming-soon">Coming Soon</button>
+      </div>
+      <div class="features-content">
+        <!-- Core Features Only -->
+        <div class="features-grid features-3x3 tab-panel active" id="features-list" role="tabpanel" aria-labelledby="tab-features">
+          <div class="feature-card">
+            <span class="feature-emoji">🧭</span>
+            <h3>Onboarding Walkthrough</h3>
+            <p>New users are smoothly guided through the app with an interactive onboarding tutorial. Replay anytime to revisit features.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-emoji">📂</span>
+            <h3>Smart Expense Categorization</h3>
+            <p>Easily add expenses under categories like Food, Travel, etc. Tap a category to view, edit, or delete all related expenses.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-emoji">👥</span>
+            <h3>Settlements Between Friends</h3>
+            <p>Record transactions with friends. The Settlements Page provides a clear history and a popup to log each transaction.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-emoji">✨</span>
+            <h3>Smooth Animations & Feedback</h3>
+            <p>Trophy animation for goals, quick "done" animation for expenses, and fun Lottie animations for streaks and milestones.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-emoji">💰</span>
+            <h3>Budget Tracking & Alerts</h3>
+            <p>Track daily, weekly, and monthly budgets. UI turns red and blinks "Out of Budget!" if you overspend.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-emoji">📈</span>
+            <h3>Expense History & Analysis</h3>
+            <p>View past expenses and analyze spending patterns by day, week, or month. Visuals adapt when out of budget.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-emoji">🧩</span>
+            <h3>Clean Dialogs & Flexible Inputs</h3>
+            <p>Budget setup and edit dialogs are scrollable and responsive. Inputs adjust for smooth use on any screen size.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-emoji">🌙</span>
+            <h3>Seamless Dark UI</h3>
+            <p>Enjoy a consistent, futuristic dark theme. All layouts are responsive and clean, even on small screens.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-emoji">🔔</span>
+            <h3>Add Expense from Notification</h3>
+            <p>Instantly log your expenses right from your phone’s notification panel—no need to open the app! Just tap the notification, enter the amount, and your expense is saved in seconds.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-emoji">📱</span>
+            <h3>Budget Widget for Your Home Screen</h3>
+            <p>Add a CTRL₹ widget to your phone’s home screen and check your remaining budget at a glance—no need to open the app! Stay on top of your spending with real-time updates, right where you need them.</p>
+          </div>
+        </div>
+        <!-- Coming Soon Features Only -->
+        <div class="features-grid features-3x3 tab-panel" id="coming-soon-list" role="tabpanel" aria-labelledby="tab-coming-soon">
+          <div class="feature-card coming-soon">
+            <span class="feature-emoji">🎖️</span>
+            <h3>Achievement Badges</h3>
+            <p>Earn badges for savings goals, streaks, and consistent tracking. Visual milestones to gamify your discipline.</p>
+          </div>
+          <div class="feature-card coming-soon">
+            <span class="feature-emoji">🔁</span>
+            <h3>Recurring Expenses</h3>
+            <p>Set up daily, weekly, or monthly recurring expenses. CTRL₹ will auto-log them for you.</p>
+          </div>
+          <div class="feature-card coming-soon">
+            <span class="feature-emoji">🧠</span>
+            <h3>Smart Suggestions & Insights</h3>
+            <p>AI-powered insights and personalized suggestions based on your spending habits.</p>
+          </div>
+          <div class="feature-card coming-soon">
+            <span class="feature-emoji">🧍</span>
+            <h3>Group Expense Splitting</h3>
+            <p>Split and settle shared expenses with friends. Fair tracking for group outings.</p>
+          </div>
+          <div class="feature-card coming-soon">
+            <span class="feature-emoji">🌐</span>
+            <h3>Multi-Device Sync</h3>
+            <p>Sync your expenses across devices using secure local encryption. No cloud account needed.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="logo2.png" alt="CTRL₹ Logo" />
+        <span class="footer-app-name">CTRL₹</span>
+      </div>
+      <div class="footer-links">
+        <a href="#features">Features</a>
+        <a href="CTRL.apk">Download</a>
+        <a href="#" id="footer-contact-link">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/ctrlr_app/" target="_blank" title="Instagram">
+          <img src="instagram.jpeg" alt="Instagram" style="width: 1.3em; height: 1.3em; vertical-align: middle; border-radius: 4px;" />
+        </a>
+        <a href="mailto:your.ctrlcommunity@gmail.com" target="_blank" title="Gmail"><img src="gmail.png" alt="Gmail" style="width: 1.3em; height: 1.3em; vertical-align: middle; border-radius: 4px;" /></a>
+      </div>
+      <div class="footer-copy">
+        &copy; 2025 CTRL₹. All rights reserved.
+      </div>
+    </div>
+  </footer>
+  <!-- Contact Modal (centered) -->
+  <div id="contact-modal" class="contact-modal" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title">
+    <div class="contact-modal-content">
+      <button class="contact-modal-close" id="contact-modal-close" aria-label="Close">&times;</button>
+      <h2 id="contact-modal-title" style="display:none;">Contact</h2>
+              <a href="https://www.instagram.com/ctrlr_app/" target="_blank" title="Instagram">
+          <img src="instagram.jpeg" alt="Instagram" class="contact-modal-icon" />
+        </a>
+      <a href="mailto:your.ctrlcommunity@gmail.com" target="_blank" title="Gmail">
+        <img src="gmail.png" alt="Gmail" class="contact-modal-icon" />
+      </a>
+    </div>
+  </div>
+  <!-- Services Modal (centered) -->
+  <div id="services-modal" class="services-modal" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="services-modal-title">
+    <div class="services-modal-content">
+      <button class="services-modal-close" id="services-modal-close" aria-label="Close">&times;</button>
+      <h2 id="services-modal-title" style="display:none;">Services</h2>
+      <img src="logo.png" alt="CTRL₹ Logo" class="services-modal-logo" id="services-modal-logo" style="cursor:pointer;" />
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

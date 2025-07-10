@@ -1,0 +1,134 @@
+{
+  "student": [
+    {
+      "range": [0, 30],
+      "messages": [
+        "🥹 Bro even Maggie is a luxury here. You’re living on vibes.",
+        "🧠 Track every ₹. Jugaad is your best friend now.",
+        "🫱 No guilt in asking for a free chai now and then.",
+        "🚨 You're basically budgeting air at this point."
+      ]
+    },
+    {
+      "range": [31, 75],
+      "messages": [
+        "🍪 Survive on Parle-G, save for one momo treat per week.",
+        "📉 You need CTRL₹ more than anyone else. We got you.",
+        "🚫 Say no to impulse Amazon orders. Even ₹49 matters.",
+        "🥲 Your best ROI? Saying no to campus canteen daily."
+      ]
+    },
+    {
+      "range": [76, 120],
+      "messages": [
+        "🍽️ One decent meal a day + a chai treat = balanced.",
+        "📅 Plan your weeks. Don’t burn it all on Day 2.",
+        "🧃 Campus cold coffee? Once a week is your limit.",
+        "🧾 Start tracking now, avoid those 'where did it go?' moments."
+      ]
+    },
+    {
+      "range": [121, 180],
+      "messages": [
+        "😌 Enough to chill, enough to mess up if you don’t track.",
+        "🎯 Control your weekdays so Sundays feel rich.",
+        "🧠 You’re in a good spot. Focus on saving some too.",
+        "🍿 Movie night + hostel canteen = allowed. Just not every week."
+      ]
+    },
+    {
+      "range": [181, 250],
+      "messages": [
+        "🤑 Swiggy-friendly budget, but still don’t flex daily.",
+        "💳 You’re earning or getting good pocket money — make it count.",
+        "🎓 CTRL₹ is not to limit you, it's to make you smarter.",
+        "🔁 Start experimenting: Weekly limits, guilt-free spends, and small savings."
+      ]
+    },
+    {
+      "range": [251, 100000],
+      "messages": [
+        "✈️ You could go Goa, but let’s save that for a long weekend.",
+        "🧘 Even with big budgets, CTRL₹ keeps you grounded.",
+        "🛍️ Splurging is okay, but tracking keeps it guilt-free.",
+        "🔥 Upgrade your habits, not just your sneakers."
+      ]
+    }
+  ],
+  "professional": [
+    {
+      "range": [0, 200],
+      "messages": [
+        "💻 Side hustle grind, but you need to track every coffee.",
+        "🧃 No shame in budgeting hard — you’re building your career.",
+        "🔄 Small savings now = peace later.",
+        "🍱 Meal prep. Office vending machines are money blackholes."
+      ]
+    },
+    {
+      "range": [201, 500],
+      "messages": [
+        "🧾 You're stable, but your Swiggy history says otherwise.",
+        "🪙 Start your SIPs, and don’t forget to budget fun too.",
+        "👞 Lifestyle creep is real. Budget like a boss.",
+        "📊 You earn, you burn — but only if you return (to savings)."
+      ]
+    },
+    {
+      "range": [501, 900],
+      "messages": [
+        "🤑 You're at the sweet spot. Treat, travel, and save.",
+        "💼 Track spends to build your next upgrade — maybe a car, maybe peace.",
+        "🏖️ A trip per quarter is realistic — if you budget your weekends.",
+        "👑 Flex all you want. Just stay in control."
+      ]
+    },
+    {
+      "range": [901, 100000],
+      "messages": [
+        "🧠 You earn more than you think. Let’s put it to work.",
+        "🏦 Time to think wealth, not just salary.",
+        "💸 You can spend freely — just know where it's going.",
+        "🪙 Investing beats overspending. Your future self will thank you."
+      ]
+    }
+  ],
+  "other": [
+    {
+      "range": [0, 100],
+      "messages": [
+        "🧾 Peace comes from tracking, even the smallest spends.",
+        "🧘 Survival doesn’t mean suffering. Plan better.",
+        "💡 Every ₹50 saved is a future flex.",
+        "🚫 Avoid leakages — not every offer is a deal."
+      ]
+    },
+    {
+      "range": [101, 300],
+      "messages": [
+        "🧱 Build consistency in income, then budget habits.",
+        "🧃 Even in unpredictable times, CTRL₹ brings clarity.",
+        "🔁 Start with small weekly limits. Adjust as you go.",
+        "🧰 Budgeting is your first tool, not your last resort."
+      ]
+    },
+    {
+      "range": [301, 600],
+      "messages": [
+        "🧭 Control now = comfort later.",
+        "🍱 You can enjoy life without losing track of it.",
+        "💵 Stability is near — use your budget as a bridge.",
+        "🏠 Shared income? Keep your portion clear & clean."
+      ]
+    },
+    {
+      "range": [601, 100000],
+      "messages": [
+        "💹 You’re doing well. Time to systemize your money.",
+        "🎯 Think in goals — not just spends.",
+        "🧠 Smart budgeters don’t stop when income rises — they upgrade their habits.",
+        "✨ Your lifestyle is built — now control your cash flow."
+      ]
+    }
+  ]
+}
